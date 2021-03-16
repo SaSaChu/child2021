@@ -1,0 +1,111 @@
+@import "Ginkgo";
+@import "color";
+
+p {
+  margin: 0;
+}
+
+.dayOrange {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: white;
+  background-color: $orange;
+  @include border-radius(30px);
+  padding: 10px 15px;
+  float: left;
+
+  @include range-width(450px, 770px) {
+    font-size: 1.2rem;
+    width: 140px;
+  }
+}
+
+.t-16-title {
+  display: inline-block;
+  font-size: 1.1rem;
+  color: white;
+  margin-right: 25px;
+  float: left;
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    font-weight: bolder;
+  }
+}
+
+.t-40 {
+  display: inline-block;
+  width: calc(100% - 253px - 419px);
+  font-size: 2.3rem;
+  font-weight: bolder;
+  text-align: left;
+  margin-top: 238px;
+  position: relative;
+
+  @include range-width(770px, 1025px) {
+    width: calc(100% - 200px - 369px);
+    margin-top: 179px;
+  }
+
+  @include range-width(450px, 770px) {
+    width: calc(100% - 150px - 319px);
+    margin-top: 120px;
+  }
+
+  &:after {
+    display: inline-block;
+    content: '';
+    width: 65%;
+    position: relative;
+    bottom: -40px;
+    right: -18px;
+
+    @include range-width(450px, 770px) {
+      width: 40%;
+    }
+  }
+
+  &.colorOrange {
+    color: $orange;
+
+    &:after {
+      border-bottom: 2px dotted $orange;
+    }
+  }
+
+  &.colorBlue {
+    color: $blue;
+
+    &:after {
+      border-bottom: 2px dotted $blue;
+    }
+  }
+
+  &.colorPurple {
+    color: $purple;
+
+    &:after {
+      border-bottom: 2px dotted $purple;
+    }
+  }
+
+  &.colorPinkorange {
+    color: $pinkorange;
+
+    &:after {
+      border-bottom: 2px dotted $pinkorange;
+    }
+  }
+
+  &.colorGreen {
+    color: $green;
+
+    &:after {
+      border-bottom: 2px dotted $green;
+    }
+  }
+}
+
+
+

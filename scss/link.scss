@@ -1,0 +1,129 @@
+@import "font";
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.imgLogo {
+  display: inline-block;
+  width: 100%;
+  max-width: 285px;
+  float: left;
+  line-height: 54px;
+  margin: 14px 30px 0 0;
+}
+
+.imgLogo2 {
+  display: inline-block;
+  width: 100%;
+  float: left;
+  max-width: 230px;
+}
+
+.linkHeader {
+  display: inline-block;
+  font-size: 1rem;
+  color: white;
+  line-height: 30px;
+  margin-top: 16px;
+  float: right;
+
+  &:hover, &:active {
+    color: $yellow;
+  }
+}
+
+.menuLink {
+  display: inline-block;
+  width: calc(100% / 7);
+  float: left;
+  font-size: 1.3rem;
+  padding: 10px 0;
+  color: white;
+  position: relative;
+  @include transition(all .3s);
+
+  @include range-width(450px, 770px) {
+    font-size: 1rem;
+  }
+
+  &.pageMenuLink {
+    color: $blue;
+  }
+
+  &:hover, &:active {
+    background-color: $orange;
+    @include border-radius(30px);
+
+    .menuDropboxs {
+      display: inline-block;
+    }
+
+    &.pageMenuLink {
+      color: white;
+    }
+  }
+
+  .menuDropboxs {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 80px;
+    z-index: 3333;
+
+    .menuDrop {
+      display: inline-block;
+      width: 100%;
+      background-color: $orange;
+      @include border-radius(15px);
+      padding: 0 10px;
+    }
+  }
+}
+
+.dropLink {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px dotted white;
+  padding: 15px 0;
+  font-size: 1.2rem;
+  color: white;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  &:hover, &:active {
+    color: $blue;
+  }
+}
+
+.newFont {
+  display: inline-block;
+  color: white;
+  font-size: 1.4rem;
+  margin: 15px 0;
+
+  @include range-width(450px, 770px) {
+    width: calc(100% - 140px - 35px);
+    margin: 0 0 15px 0;
+  }
+
+  &:hover, &:active {
+    color: $yellow;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

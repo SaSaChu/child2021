@@ -14,7 +14,7 @@ p {
   padding: 10px 15px;
   float: left;
 
-  @include range-width(450px, 770px) {
+  @include range-width(0, 770px) {
     font-size: 1.2rem;
     width: 140px;
   }
@@ -31,6 +31,12 @@ p {
     display: inline-block;
     content: attr(title);
     font-weight: bolder;
+  }
+
+  @include range-width(0, 450px) {
+    font-size: 1rem;
+    text-align: left;
+    margin-right: 0;
   }
 }
 
@@ -53,16 +59,40 @@ p {
     margin-top: 120px;
   }
 
+  @include range-width(0, 450px) {
+    width: auto;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-top: 100px;
+    float: left;
+  }
+
+  &.b-w40 {
+    &:after {
+      width: 40%;
+    }
+  }
+
+   &.b-w30 {
+    &:after {
+      width: 30%;
+    }
+  }
+
   &:after {
     display: inline-block;
     content: '';
-    width: 65%;
+    width: 50%;
     position: relative;
     bottom: -40px;
     right: -18px;
 
     @include range-width(450px, 770px) {
-      width: 40%;
+      width: 30%;
+    }
+
+    @include range-width(0, 450px) {
+      display: none;
     }
   }
 
@@ -83,10 +113,10 @@ p {
   }
 
   &.colorPurple {
-    color: $purple;
+    color: $purple-d;
 
     &:after {
-      border-bottom: 2px dotted $purple;
+      border-bottom: 2px dotted $purple-d;
     }
   }
 
@@ -106,6 +136,120 @@ p {
     }
   }
 }
+
+.big_title {
+  display: inline-block;
+  font-size: 2.3rem;
+  font-weight: bolder;
+  text-align: left;
+
+  @include range-width(0, 450px) {
+    font-size: 1.7rem;
+  }
+
+  &.b-t-pu {
+    color: $purple-d;
+  }
+
+  &.b-t-blue {
+    color: $blue;
+  }
+
+  &.b-t-green {
+    color: $green;
+  }
+
+  &.b-t-pinkorange {
+    color: $pinkorange;
+  }
+
+  &.h-t {
+    &:before {
+      display: inline-block;
+      content: attr(title);
+      background-color: $yellow;
+      color: #272822;
+      margin-right: 20px;
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      @include border-radius(30px);
+    }
+  }
+}
+
+.t_p18 {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.3rem;
+  color: rgba(61, 61, 58, 1.00);
+  text-align: left;
+  line-height: 1.5;
+
+  @include range-width(0, 450px) {
+    font-size: 1.2rem;
+  }
+}
+
+.t_p18_b {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.3rem;
+  color: rgba(61, 61, 58, 1.00);
+  text-align: left;
+  line-height: 1.5;
+  font-weight: bolder;
+
+  @include range-width(0, 450px) {
+    font-size: 1.2rem;
+  }
+}
+
+.add_type {
+  font-size: 1.2rem;
+  color: black;
+  text-align: left;
+  padding-bottom: 10px;
+  line-height: 30px;
+
+  @include range-width(0, 450px) {
+    font-size: 1.1rem;
+  }
+
+  &.a-t-white {
+    color: white;
+
+    &:before {
+      color: white;
+    }
+  }
+
+  &.add_all_before {
+    &:before {
+      width: 100%;
+    }
+  }
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    font-weight: bolder;
+  }
+
+  &.a-t-pinkorange {
+    &:before {
+      color: $pinkorange;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
 
 
 

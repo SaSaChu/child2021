@@ -25,28 +25,60 @@ body {
   }
 }
 
-.mobile-close {
-  display: inline-block;
+.all-close {
+  display: inline-block !important;
 
   @include range-width(0, 770px) {
-    display: none;
+    display: none !important;
+  }
+}
+
+.all-open {
+  display: none  !important;
+
+  @include range-width(0, 770px) {
+    display: inline-block !important;
+  }
+}
+
+.ipad-close {
+  display: inline-block !important;
+
+  @include range-width(450px, 770px) {
+    display: none !important;
+  }
+}
+
+.ipad-open {
+  display: none !important;
+
+  @include range-width(450px, 770px) {
+    display: inline-block !important;
+  }
+}
+
+.mobile-close {
+  display: inline-block !important;
+
+  @include range-width(0, 450px) {
+    display: none !important;
   }
 }
 
 .mobile-open {
-  display: none;
+  display: none !important;
 
-  @include range-width(0, 770px) {
-    display: inline-block;
+  @include range-width(0, 450px) {
+    display: inline-block !important;
   }
 }
 
 .order-l {
-  float: left;
+  float: left !important;
 }
 
 .order-r {
-  float: right;
+  float: right !important;
 }
 
 .text-l {
@@ -63,6 +95,21 @@ body {
   max-width: 1200px;
 }
 
+.all_boxs {
+  display: inline-block;
+  width: 100%;
+  @include clearfix();
+
+  img {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.boxIn {
+  display: inline-block;
+}
+
 .boxFull {
   display: inline-block;
   width: 100%;
@@ -76,6 +123,22 @@ body {
 
   &.fullPo {
     position: relative;
+  }
+}
+
+.boxs50 {
+  display: inline-block;
+  width: calc(100% / 2 - 40px * 1 / 2);
+  margin-right: 40px;
+  float: left;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include range-width(0, 450px) {
+    width: 100%;
+    margin-right: 0;
   }
 }
 
@@ -100,12 +163,16 @@ body {
 header {
   display: inline-block;
   width: 100%;
-  padding: 20px 0 10px 0;
+  padding: 20px 0 15px 0;
   @include clearfix();
   background-color: $blue;
 
   @include range-width(770px, 1025px) {
     padding: 20px 15px 10px 15px;
+  }
+
+  @include range-width(0, 450px) {
+    padding: 12px 0 15px 0;
   }
 }
 
@@ -140,6 +207,11 @@ header {
   margin-top: 45px;
   padding-bottom: 100px;
   position: relative;
+
+  @include range-width(0, 450px) {
+    margin-top: 18px;
+    padding-bottom: 10px;
+  }
 }
 
 .newLinkBoxs {
@@ -185,8 +257,14 @@ footer {
   margin-top: 30px;
   @include clearfix();
 
-  @include range-width(450px, 1025px) {
+  @include range-width(0, 1025px) {
     padding: 0 10px;
+  }
+
+  @include range-width(0, 450px) {
+    background-position: 27% 102%;
+    background-size: contain;
+    margin-top: 20px;
   }
 }
 
@@ -195,8 +273,88 @@ footer {
   width: 100%;
   max-width: 1200px;
   background-color: rgba(215, 213, 234, 1.00);
-  min-height: 800px;
+  min-height: 600px;
+  padding: 30px 0 180px 0;
+
+  @include range-width(0, 1025px) {
+    padding: 30px 15px 160px 15px;
+  }
 }
+
+// .m-menuBox {
+//   display: inline-block;
+//   width: 100%;
+//   padding: 0 15px;
+
+//   &:hover, &:active {
+//     .m-dropBox {
+//       display: inline-block;
+//     }
+//   }
+
+//   .m-dropBox {
+//     display: none;
+//     width: 100%;
+//     margin-top: 15px;
+//   }
+// }
+
+.m-menuBox {
+  display: none;
+  width: 100%;
+  padding: 0 15px;
+
+  &.m-menuBox-s {
+    display: inline-block;
+  }
+}
+
+.m-dropboxs {
+  &.m-dropboxs-s {
+    display: inline-block;
+  }
+  display: none;
+  width: 100%;
+}
+
+.blueBoxs {
+  display: inline-block;
+  width: 100%;
+  max-width: 1000px;
+  @include border-radius(10px);
+  background-color: $blue;
+  padding: 20px;
+}
+
+.page-news {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 2px dotted white;
+  padding: 15px;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.pageBoxs {
+  display: inline-block;
+  width: 100%;
+  max-width: 1100px;
+  padding: 20px 0;
+
+  img {
+    display: inline-block;
+    width: 100%;
+    max-width: 1100px;
+  }
+}
+
+
+
+
+
+
 
 
 

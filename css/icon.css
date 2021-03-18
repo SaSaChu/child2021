@@ -1,4 +1,4 @@
-@font-face { font-family: "icon"; src: url('../font/icomoon/fonts/icomoon.eot?1615953836') format('embedded-opentype'), url('../font/icomoon/fonts/icomoon.woff?1615953836') format('woff'), url('../font/icomoon/fonts/icomoon.ttf?1615953836') format('truetype'), url('../font/icomoon/fonts/icomoon.svg?1615953836') format('svg'); }
+@font-face { font-family: "icon"; src: url('../font/icomoon/fonts/icomoon.eot?1616053182') format('embedded-opentype'), url('../font/icomoon/fonts/icomoon.woff?1616053182') format('woff'), url('../font/icomoon/fonts/icomoon.ttf?1616053182') format('truetype'), url('../font/icomoon/fonts/icomoon.svg?1616053182') format('svg'); }
 *[class^="icon-"]:before, *[class*=" icon-"]:before { font-family: "icon"; speak: none; font-style: normal; font-weight: normal; font-variant: normal; }
 
 .icon-cancel:before { content: "\e90a"; }
@@ -30,6 +30,8 @@
 .icon-credit_card:before { content: "\e90e"; }
 
 .icon-storefront:before { content: "\e90f"; }
+
+.icon-link:before { content: "\e913"; }
 
 .icon-shopping-bag:before { content: "\e904"; }
 

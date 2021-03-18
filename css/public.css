@@ -105,6 +105,8 @@ a { cursor: pointer; text-decoration: none; }
 .tag:after { display: inline-block; content: '\e902'; font-family: icon; line-height: 20px; margin: 0 10px; }
 .tag:last-child:after { display: none; }
 
+.orderLink { display: inline-block; font-size: 1.2rem; color: #66398a; text-align: left; }
+
 .m-r-35 { margin-right: 35px; }
 
 .m-l-35 { margin-left: 35px; }

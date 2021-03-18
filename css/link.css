@@ -103,3 +103,5 @@ a { cursor: pointer; text-decoration: none; }
 .tag { display: inline-block; color: #626262; font-size: 1rem; float: left; }
 .tag:after { display: inline-block; content: '\e902'; font-family: icon; line-height: 20px; margin: 0 10px; }
 .tag:last-child:after { display: none; }
+
+.orderLink { display: inline-block; font-size: 1.2rem; color: #66398a; text-align: left; }

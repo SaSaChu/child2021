@@ -63,7 +63,7 @@ a { cursor: pointer; text-decoration: none; }
 .linkHeader { display: inline-block; font-size: 1rem; color: white; line-height: 30px; margin-top: 16px; float: right; }
 .linkHeader:hover, .linkHeader:active { color: #ffdb03; }
 
-.menuLink { display: inline-block; width: calc(100% / 7); float: left; font-size: 1.3rem; padding: 10px 0; color: white; position: relative; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.menuLink { display: inline-block; width: calc(100% / 7.1); float: left; font-size: 1.3rem; padding: 10px 0; color: white; position: relative; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
 @media screen and (max-width: 769px) and (min-width: 450px) { .menuLink { font-size: 1rem; } }
 .menuLink.pageMenuLink { color: #304198; }
 .menuLink:hover, .menuLink:active { background-color: #ee764b; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; }
@@ -269,6 +269,8 @@ body.indexColor { background-color: #304198; }
 .all_boxs img { display: inline-block; width: 100%; }
 
 .boxIn { display: inline-block; }
+
+.boxIn2 { display: inline-block; width: 100%; }
 
 .boxFull { display: inline-block; width: 100%; max-width: 1200px; margin: 0, auto; *zoom: 1; }
 .boxFull:after { display: table; content: ""; line-height: 0; clear: both; }

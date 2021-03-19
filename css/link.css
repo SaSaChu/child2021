@@ -39,6 +39,8 @@ p { margin: 0; }
 
 .t_p18 { display: inline-block; width: 100%; font-size: 1.3rem; color: #3d3d3a; text-align: left; line-height: 1.5; }
 @media screen and (max-width: 449px) and (min-width: 0) { .t_p18 { font-size: 1.2rem; } }
+.t_p18 .tp18_link { display: inline-block; font-size: 1.3rem; color: #ee764b; text-decoration: underline; }
+@media screen and (max-width: 449px) and (min-width: 0) { .t_p18 .tp18_link { font-size: 1.2rem; } }
 
 .t_p18_b { display: inline-block; width: 100%; font-size: 1.3rem; color: #3d3d3a; text-align: left; line-height: 1.5; font-weight: bolder; }
 @media screen and (max-width: 449px) and (min-width: 0) { .t_p18_b { font-size: 1.2rem; } }

@@ -188,6 +188,17 @@ p {
   @include range-width(0, 450px) {
     font-size: 1.2rem;
   }
+
+  .tp18_link {
+    display: inline-block;
+    font-size: 1.3rem;
+    color: $orange;
+    text-decoration: underline;
+
+    @include range-width(0, 450px) {
+      font-size: 1.2rem;
+    }
+  }
 }
 
 .t_p18_b {

@@ -46,6 +46,8 @@ p { margin: 0; }
 
 .add_type { font-size: 1.2rem; color: black; text-align: left; padding-bottom: 10px; line-height: 30px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .add_type { font-size: 1.1rem; } }
+.add_type.order_use:before { float: left; line-height: 100px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .add_type.order_use:before { line-height: 20px; } }
 .add_type.a-t-white { color: white; }
 .add_type.a-t-white:before { color: white; }
 .add_type.add_all_before:before { width: 100%; }
@@ -96,6 +98,7 @@ a { cursor: pointer; text-decoration: none; }
 .linkOrder { display: inline-block; padding: 10px 15px; font-size: 1.2rem; color: white; background-color: #66398a; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; float: left; margin-top: 25px; }
 .linkOrder.icon-ticket { line-height: 29px; }
 .linkOrder:hover, .linkOrder:active { background-color: #afabd5; color: #66398a; }
+@media screen and (max-width: 449px) and (min-width: 0) { .linkOrder { font-size: .9rem; } }
 
 .linkMore { display: inline-block; font-size: 1rem; color: #66398a; font-weight: bolder; }
 @media screen and (max-width: 449px) and (min-width: 0) { .linkMore { font-size: .8rem; } }

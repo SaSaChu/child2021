@@ -214,6 +214,10 @@ a {
     background-color: $purple;
     color: $purple-d;
   }
+
+  @include range-width(0, 450px) {
+    font-size: .9rem;
+  }
 }
 
 .linkMore {

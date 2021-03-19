@@ -45,6 +45,8 @@ p { margin: 0; }
 
 .add_type { font-size: 1.2rem; color: black; text-align: left; padding-bottom: 10px; line-height: 30px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .add_type { font-size: 1.1rem; } }
+.add_type.order_use:before { float: left; line-height: 100px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .add_type.order_use:before { line-height: 20px; } }
 .add_type.a-t-white { color: white; }
 .add_type.a-t-white:before { color: white; }
 .add_type.add_all_before:before { width: 100%; }

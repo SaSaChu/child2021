@@ -215,6 +215,17 @@ p {
     font-size: 1.1rem;
   }
 
+  &.order_use {
+    &:before {
+      float: left;
+      line-height: 100px;
+
+      @include range-width(0, 450px) {
+        line-height: 20px;
+      }
+    }
+  }
+
   &.a-t-white {
     color: white;
 

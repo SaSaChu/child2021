@@ -54,3 +54,4 @@ p { margin: 0; }
 .add_type.add_all_before:before { width: 100%; }
 .add_type:before { display: inline-block; content: attr(title); font-weight: bolder; }
 .add_type.a-t-pinkorange:before { color: #e75440; }
+.add_type.a-t-blue:before { color: #304198; }

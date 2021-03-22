@@ -218,6 +218,11 @@ a {
   @include range-width(0, 450px) {
     font-size: .9rem;
   }
+
+  &.newsOrder {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
 }
 
 .linkMore {

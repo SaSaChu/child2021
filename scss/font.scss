@@ -262,6 +262,12 @@ p {
       color: $pinkorange;
     }
   }
+
+  &.a-t-blue {
+    &:before {
+      color: $blue;
+    }
+  }
 }
 
 

@@ -54,6 +54,7 @@ p { margin: 0; }
 .add_type.add_all_before:before { width: 100%; }
 .add_type:before { display: inline-block; content: attr(title); font-weight: bolder; }
 .add_type.a-t-pinkorange:before { color: #e75440; }
+.add_type.a-t-blue:before { color: #304198; }
 
 a { cursor: pointer; text-decoration: none; }
 
@@ -100,6 +101,7 @@ a { cursor: pointer; text-decoration: none; }
 .linkOrder.icon-ticket { line-height: 29px; }
 .linkOrder:hover, .linkOrder:active { background-color: #afabd5; color: #66398a; }
 @media screen and (max-width: 449px) and (min-width: 0) { .linkOrder { font-size: .9rem; } }
+.linkOrder.newsOrder { margin-top: 0; margin-bottom: 25px; }
 
 .linkMore { display: inline-block; font-size: 1rem; color: #66398a; font-weight: bolder; }
 @media screen and (max-width: 449px) and (min-width: 0) { .linkMore { font-size: .8rem; } }
